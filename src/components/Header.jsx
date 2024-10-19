@@ -7,7 +7,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/images/logo.png" alt="Technically Technical Logo" className="h-8 w-8 mr-2" />
+            <img src="/images/logo-nobg.png" alt="Technically Technical Logo" className="h-8 w-8 mr-2" />
             <span className="text-2xl font-bold text-blue-600">
               Technically Technical
             </span>
