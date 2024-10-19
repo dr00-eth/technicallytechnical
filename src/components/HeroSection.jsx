@@ -58,7 +58,7 @@ const HeroSection = ({ scrollToSection, aboutRef }) => {
             onClick={() => scrollToSection(aboutRef)}
             className="bg-yellow-400 text-blue-600 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 hover:bg-yellow-300"
           >
-            Get Technically Awesome!
+            Let's Get Technical!
           </button>
         </div>
       </div>

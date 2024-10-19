@@ -6,8 +6,11 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
     <header className="fixed w-full bg-white shadow-md z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-600">
-            Technically Technical
+          <div className="flex items-center">
+            <img src="/images/logo.png" alt="Technically Technical Logo" className="h-8 w-8 mr-2" />
+            <span className="text-2xl font-bold text-blue-600">
+              Technically Technical
+            </span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
