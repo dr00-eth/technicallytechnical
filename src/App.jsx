@@ -19,9 +19,9 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 font-sans">
+    <div className="min-h-screen w-full overflow-x-hidden bg-gray-100 text-gray-900 font-sans">
       <Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-      <main>
+      <main className="w-full">
         <HeroSection scrollToSection={scrollToSection} aboutRef={aboutRef} />
         <About ref={aboutRef} />
         <Services />
