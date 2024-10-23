@@ -19,7 +19,7 @@ const Team = () => {
     },
     {
       name: "Steve Fox",
-      role: "Co-Founder & Wizard of Oz (the Programming Language)",
+      role: "Co-Founder & Wizard of Oz (and Excel)",
       description: "Tech guru with deep expertise in AI, automation systems, and finding the best GIFs for Slack conversations.",
       imageUrl: "/images/fox.png"
     },
