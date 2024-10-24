@@ -11,11 +11,28 @@ const Contact = forwardRef((props, ref) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setFormData({ name: '', email: '', message: '' });
-    alert('Thanks for reaching out! We\'ll get back to you faster than you can say "artificial intelligence"!');
+    try {
+      const response = await fetch('https://formspree.io/f/xjkvklre', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Form submitted:', formData);
+        setFormData({ name: '', email: '', message: '' });
+        alert('Thanks for reaching out! We\'ll get back to you faster than you can say "artificial intelligence"!');
+      } else {
+        alert('Oops! Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Oops! Something went wrong. Please try again.');
+    }
   };
 
   return (
