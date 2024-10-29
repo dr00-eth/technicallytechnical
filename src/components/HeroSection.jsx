@@ -46,10 +46,10 @@ const HeroSection = ({ scrollToSection, aboutRef }) => {
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <div className="text-center px-4 w-full max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight text-white">
-            Technically Technical
+            Turning your complex problems...
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight text-yellow-300">
-            Where Technology Gets... Technical!
+          into laughably easy solutions!
           </h2>
           <button
             onClick={() => scrollToSection(aboutRef)}
