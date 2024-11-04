@@ -36,6 +36,10 @@ const Footer = () => {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Technically Technical - You've technically reached the end... or is it just the beginning?</p>
+          <a href="https://liftlabstx.com" className="flex items-center justify-center mt-4 text-gray-400 hover:text-white transition duration-300">
+              <img src="/images/ll-logo.png" alt="Lift Labs Logo" className="h-6 w-auto mr-2" />
+              <span>a Lift Labs Company</span>
+            </a>
         </div>
       </div>
     </footer>
