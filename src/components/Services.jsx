@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bot, Zap, Home, GitBranch, Briefcase, Lightbulb, Book, Headphones } from 'lucide-react';
+import { Bot, Zap, Home, GitBranch, Briefcase, Lightbulb, Book, Headphones, Palette, PenTool, Calendar, BarChart2 } from 'lucide-react';
 
 const ServiceCard = ({ Icon, title, description }) => (
   <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:bg-blue-100 hover:-translate-y-1 group">
@@ -50,6 +50,26 @@ const Services = () => {
       Icon: Headphones,
       title: "Ongoing Support",
       description: "Got a question or need a hand? We're here to help, technically around the clock. But please, no calls at 3 AM unless it's really, really important. Or really, really funny."
+    },
+    {
+      Icon: PenTool,
+      title: "Creative Content Engine",
+      description: "Want to bring your brand to life on social media, but lack the time or energy? We'll take care of everything from crafting posts to scheduling. Think of it as a non-stop content machine that's always on-brand and ready to engage—minus the endless brainstorming sessions."
+    },
+    {
+      Icon: Palette,
+      title: "Digital Design & Assets",
+      description: "Need visuals that pop and materials that actually represent your brand? Our team designs everything from sleek brochures to bold flyers. It's like hiring a full-time designer who gets your brand voice—and never complains about deadlines."
+    },
+    {
+      Icon: Calendar,
+      title: "Seamless Scheduling",
+      description: "Tired of scheduling chaos? We'll set up calendars, reminders, and sync across platforms so you never miss a beat. It's like a personal assistant, but with better memory and no coffee breaks. (Sorry, not sorry.)"
+    },
+    {
+      Icon: BarChart2,
+      title: "Feedback & Insights Hub",
+      description: "Data doesn't have to be dull. We create easy-to-use forms and surveys, collecting the info you need in a format you actually understand. Think of it as your secret weapon for getting feedback without the hassle."
     }
   ];
 
